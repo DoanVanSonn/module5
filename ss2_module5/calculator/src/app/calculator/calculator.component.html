@@ -1,0 +1,18 @@
+
+<div class="form-group">
+  <label for="f1">First Number</label>
+  <input #f1
+    type="number"
+         class="form-control" name="" id="f1" >
+</div>
+<div class="form-group">
+  <label for="f2">Second Number</label>
+  <input #f2
+         type="number"
+         class="form-control" name="" id="f2" >
+</div>
+<button type="button" class="btn btn-primary" (click)="sum(f1.value,f2.value)">Tính Tổng</button>
+<button type="button" class="btn btn-primary" (click)="sub(f1.value,f2.value)">Tính Hiệu</button>
+<button type="button" class="btn btn-primary" (click)="div(f1.value,f2.value)">Tính Thương</button>
+<button type="button" class="btn btn-primary" (click)="mul(f1.value,f2.value)">Tính Tích</button>
+<p>Kết quả: {{result}}</p>
